@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Lançamento Oblíquio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Calculadora de Lançamento Oblíquio</h1> <!--Título do Programa-->
+        <form action="#" method="post" id="formulario"> <!--Início do Formulário-->
+            <!--Célula 1-->
+            <label for="velocidadeinicial">Velocidade Inicial (m/s)</label>
+            <input type="number" name="v" id="velocidadeinicial">
+            
+            <!--Célula 2-->
+            <div>
+                <label for="angulo">Ângulo (°)</label>
+                <input type="number" name="angulo" id="angulo">
+            </div>
+
+             <!--Célula 3-->
+            <div>
+                <label for="posicaoinicialhorizontal">Posição Inicial Horizontal (m)</label>
+                <input type="number" name="x0" id="posicaoinicialhorizontal">
+            </div>
+
+             <!--Célula 4-->
+
+            <div>
+            <label for="posicaoinicialvertical">Posição Inicial Vertical (m)</label>
+            <input type="number" name="x0" id="posicaoinicialvertical">
+            </div>
+
+             <!--Célula 4-->
+            <div>
+                <label for="tempo">Tempo (s)</label>
+                <input type="number" name="t" id="tempo">
+            </div>
+
+             <!--Botão-->
+            <button type="button" id="calcular">Calcule</button>
+            
+        </form>
+
+             <!--Resultado-->
+            <div>
+                <h2>Resultados</h2>
+                <p id="resultadohorizontal"></p>
+                <p id="resultadovertical"></p>
+            </div>
+    </div>
+</body>
+</html>
